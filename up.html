@@ -1,0 +1,14 @@
+<html>
+
+<form action="#file" method='post' enctype="multipart/form-data">
+Description of File: <input type="text" name="description_entered"/><br><br>
+<input type="file" name="file"/><br><br>
+	
+<input type="submit" name="submit" value="Upload"/>
+
+</form>
+</html>
+ <!-- $file = $_FILES["file"]["name"];	
+  
+	move_uploaded_file($_FILES['file']['tmp_name'], "upload/".$file);
+$query=mysql_query("INSERT INTO aqar(upload_iqac_notif)VALUES('$file')");-->

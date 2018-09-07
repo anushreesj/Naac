@@ -1,0 +1,18 @@
+wrap content : property is the layout property (means the component wants to display big enough to show the button text on this.
+height is also wrap content 
+when we change the demin it changes to fill parent. parent here is activity. if fill parent is set only to height then only the height changes when the content is increased. but if the fill parent is set to both height and width both will change accordingly.
+match parent is similar to fill parent
+toast=used to display messsages on the screen at the action or not required action of the user. it can be imported from the "import andriod.widget.Toast" library
+
+=password: (fill parent) it always hides the characters
+    to show the password on button click:
+                   private EditText pass;
+                   private Button b;
+                   public void addListernerOnButton(){
+                        pass=(EditText) findViewById(R.id.editText1);
+                        b=(Button) findViewById(R.id.button1);
+                        b.setOnClickListener(new View.OnClickListener(){
+                                                          @override
+                                               public void OnClick(View v){
+                                                 Toast.makeText(MainActivity.this,pass.getText(),Toast.Length_Short).show() 
+                                                  //the above line shows the password on the screen and it disappears after a very short period of time//
